@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Testing twitter connection using SLViewController" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="guI-Ox-nJ1">
+                                <rect key="frame" x="0.0" y="84" width="320" height="150"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.6162707923205617" green="0.71180602925513847" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Testing facebook connection using SLViewcontroller" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="V73-EC-47q">
+                                <rect key="frame" x="0.0" y="242" width="320" height="150"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.86529437449472679" green="0.68321100040004601" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.78689461074711653" green="0.20452487570866007" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="UIActivityViewController Testing" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kKo-y2-k6e">
+                                <rect key="frame" x="0.0" y="411" width="320" height="149"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.99214681218747514" blue="0.75091692657631248" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.062697324260000006" blue="0.071885542390000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JIa-LP-fyr">
+                                <rect key="frame" x="0.0" y="40" width="320" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem systemItem="action" id="1Zi-4h-QVb">
+                                        <connections>
+                                            <action selector="TweetDo:" destination="BYZ-38-t0r" id="vww-5L-SYT"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="action" id="sJ3-25-cv6">
+                                        <connections>
+                                            <action selector="postDo:" destination="BYZ-38-t0r" id="Xv3-sQ-ml4"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="action" id="LzD-0e-tKg">
+                                        <connections>
+                                            <action selector="moreDo:" destination="BYZ-38-t0r" id="sPj-w1-MSE"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="action" id="OLX-kM-Rav">
+                                        <connections>
+                                            <action selector="nothingDo:" destination="BYZ-38-t0r" id="PW2-ww-HAn"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JIa-LP-fyr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="uD3-jv-tR9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="doMore" destination="JIa-LP-fyr" id="sW0-Rw-EM1"/>
+                        <outlet property="genPost" destination="JIa-LP-fyr" id="5pZ-WM-ZI5"/>
+                        <outlet property="moreText" destination="kKo-y2-k6e" id="2KX-um-z1L"/>
+                        <outlet property="nothingNow" destination="JIa-LP-fyr" id="z0N-JB-Ajk"/>
+                        <outlet property="postText" destination="V73-EC-47q" id="gsm-NI-1FD"/>
+                        <outlet property="tweetShare" destination="JIa-LP-fyr" id="lAy-54-6TM"/>
+                        <outlet property="tweetText" destination="guI-Ox-nJ1" id="nyE-rS-sBf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="252"/>
+        </scene>
+    </scenes>
+</document>
